@@ -1,6 +1,6 @@
 'use client'
 import React, { Suspense } from 'react'
-import s from './Scene.module.scss'
+import s from './GooseScene.module.scss'
 import { Canvas } from '@react-three/fiber'
 import { Goose } from '../goose/Goose'
 import {
@@ -24,7 +24,7 @@ export default function Scene() {
         <directionalLight intensity={6} position={[2, 2, 1]} />
         {/* Add 3D objects here */}
         <Suspense fallback={<Loader />}>
-          <ScrollControls damping={0.2} pages={3}>
+          <ScrollControls damping={0.6}>
             <Goose />
           </ScrollControls>
         </Suspense>

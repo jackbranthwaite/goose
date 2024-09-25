@@ -21,6 +21,8 @@ export const Goose = () => {
     actions['Armature|walk'].play()
   }, [])
 
+  // If you add actions['Armature|walk'].play().paused = true above and uncomment this
+  // then the animation will run on scroll
   // useFrame(
   //   () =>
   //     // @ts-ignore
